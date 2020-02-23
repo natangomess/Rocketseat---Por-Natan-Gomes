@@ -1,0 +1,38 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: #282a36 url('/assets/Rocketseat.jpg') no-repeat;
+  background-size: cover;
+  background-position-y: 90px;
+  -webkit-font-smoothing: antialiased !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  padding: 30px;
+  border-bottom: 1px solid #333;
+  background: rgba(0, 0, 0, 0.274);
+}
+
+header div {
+  text-align: center;
+}
+
+header div a {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0 16px;
+  text-decoration: none;
+}
+
+header div a:hover {
+  color: #7d40e7;
+  transition: color 500ms;
+}
