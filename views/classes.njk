@@ -1,0 +1,30 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Rocketseat/bootcamp-launchbase-desafios-02/master/desafios/favicon.ico">
+
+{% endblock %}
+
+{% block content %}
+
+    <h1> Cursos </h1>
+
+    <section class="paths">
+        
+        {% for item in items %}
+        <div class="path" id="{{item.id}}">
+          <div class="classe__image-container">
+            <img src="/assets/{{item.img}}" alt="Imagem de {{item.img}}">
+          </div>
+          <div class="info">
+            <p> {{item.modules}} </p>
+            <p> {{item.price}} </p>
+          </div>
+        </div>
+        {% endfor %}
+    </section>
+
+  <script src="scripts.js"></script>
+
+{% endblock %}
